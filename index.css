@@ -5,7 +5,6 @@
 .container{
     width: 100%;
     min-height: 720px;
-    align-content: center;
     margin: auto;
     font-family: Arial, Helvetica, sans-serif;
     background-color: darkslategray;
@@ -16,6 +15,7 @@
     margin: auto;
     text-align: center;
     padding: 20px 0 100px 0;
+    color: goldenrod;
 }
 
 .quoteContainer{
@@ -63,4 +63,27 @@
 
 .theme{
     background-color: darkblue;
+}
+
+.font{
+    font-size: larger;
+}
+
+.btn-container{
+    padding: 30px;
+    text-align: right;
+}
+
+.btn-container>button{
+    width: 80px;
+    height: 35px;
+    font-size: medium;
+    border: none;
+    outline: none;
+    background-color: darkcyan;
+    margin-right: 10px;
+}
+
+.btn-container>button:hover{
+    cursor: pointer;
 }

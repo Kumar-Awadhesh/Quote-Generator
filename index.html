@@ -34,29 +34,15 @@
                fetchQuote() 
             },[])
 
-            const changeTheme = () => {
-                if(!setTheme){
-                    setTheme(true);
-                }
-                else{
-                    setTheme(false);
-                }
-                
-            }
-
-            const fontSize = () => {
-                if(!setFont){
-                    setFont(true);
-                }
-                else{
-                    setFont(false);
-                }
-            }
+            const changeTheme = () => setTheme(changeTheme => !changeTheme);
+     
+            const fontSize = () => setFont(changeFont => !changeFont);
+        
 
             return(
                 <>
                     <div className={`container ${theme ? "theme": ""} ${font ? "font": ""}`} >
-                        <div>
+                        <div className="btn-container">
                             <button className="theme-btn" onClick={changeTheme}>Theme</button>
                             <button className="font-btn" onClick={fontSize}>Font</button>
                         </div>
